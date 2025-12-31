@@ -433,7 +433,7 @@ def call_doubao_api(messages, temperature=0.7, stream=False):
     """调用豆包API进行文本对话"""
     try:
         # 检查API密钥
-        if not ARK_API_KEY or ARK_API_KEY == "您的豆包API密钥":
+        if not ARK_API_KEY or ARK_API_KEY == "":
             logger.warning("警告: 未配置豆包API密钥，使用模拟数据")
             return None
             
@@ -463,7 +463,7 @@ def call_doubao_image_api(image_path, question="描述这张图片并提取适�
     """调用豆包API进行图片识别"""
     try:
         # 检查API密钥
-        if not ARK_API_KEY or ARK_API_KEY == "c3afb185-29bb-407c-9af6-99bff46394ba":
+        if not ARK_API_KEY or ARK_API_KEY == "":
             logger.warning("警告: 未配置豆包API密钥，使用模拟数据")
             return None
             
@@ -2388,3 +2388,4 @@ if __name__ == '__main__':
     
 
     app.run(debug=True, host='0.0.0.0', port=5000)
+
