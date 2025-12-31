@@ -463,7 +463,7 @@ def call_doubao_image_api(image_path, question="描述这张图片并提取适�
     """调用豆包API进行图片识别"""
     try:
         # 检查API密钥
-        if not ARK_API_KEY or ARK_API_KEY == "您的豆包API密钥":
+        if not ARK_API_KEY or ARK_API_KEY == "c3afb185-29bb-407c-9af6-99bff46394ba":
             logger.warning("警告: 未配置豆包API密钥，使用模拟数据")
             return None
             
@@ -2373,7 +2373,7 @@ if __name__ == '__main__':
     # 检查是否需要添加示例数据                             
     
     # 检查API密钥
-    if not ARK_API_KEY or ARK_API_KEY == "您的豆包API密钥":
+    if not ARK_API_KEY or ARK_API_KEY == "c3afb185-29bb-407c-9af6-99bff46394ba":
         print("\n⚠️ 警告: 未配置豆包API密钥，AI功能将使用模拟数据")
         print("如需使用完整AI功能，请按以下方式配置：")
         print("1. 在app.py中修改ARK_API_KEY变量")
@@ -2386,4 +2386,5 @@ if __name__ == '__main__':
     print("访问地址: http://127.0.0.1:5000")
     print("API文档: http://127.0.0.1:5000/api/health")
     
+
     app.run(debug=True, host='0.0.0.0', port=5000)
