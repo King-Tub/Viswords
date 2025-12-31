@@ -8,7 +8,7 @@ class Config:
     FLASK_DEBUG = os.environ.get('FLASK_DEBUG') == 'true'
     
     # 豆包API配置
-    ARK_API_KEY = os.environ.get('ARK_API_KEY') or "您的豆包API密钥"
+    ARK_API_KEY = os.environ.get('ARK_API_KEY') or "c3afb185-29bb-407c-9af6-99bff46394ba"
     DOUBAO_API_URL = os.environ.get('DOUBAO_API_URL') or "https://ark.cn-beijing.volces.com/api/v3"
     DOUBAO_MODEL = os.environ.get('DOUBAO_MODEL') or "doubao-seed-1-6-lite-251015"
     AI_TEMPERATURE = float(os.environ.get('AI_TEMPERATURE') or '0.7')
